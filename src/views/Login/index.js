@@ -234,156 +234,38 @@ class Login extends Component {
           <span class="span">Connecting Hearts</span>
         </div>
         <div class="pt-5 px-3">
-          <button class="mt-3 global-btn-2"><i class="fa fa-facebook"></i> <span>LOGIN WITH FACEBOOK</span> </button>
-          <button class="mt-3 global-btn-2"><i class="fa fa-twitter"></i> <span>LOGIN WITH TWITTER</span> </button>
-          <button class="mt-3 global-btn-2"><i class="fa fa-google"></i> <span>LOGIN WITH GOOGLE</span> </button>
+          <button
+            class="mt-3 global-btn-2"
+            disableRipple
+            type="submit"
+            onClick={this.loginWithGoogle}
+          >
+            <i class="fa fa-google"></i>
+            <span>LOGIN WITH GOOGLE</span>
+          </button>
+
+          <button
+            class="mt-3 global-btn-2"
+            disableRipple
+            type="submit"
+            onClick={this.loginWithFacebook}
+          >
+            <i class="fa fa-facebook"></i>
+            <span>LOGIN WITH FACEBOOK</span>
+          </button>
+
+          <button
+            class="mt-3 global-btn-2"
+            disableRipple
+            type="submit"
+            onClick={this.loginWithTwitter}
+          >
+            <i class="fa fa-twitter"></i>
+            <span>LOGIN WITH TWITTER</span>
+          </button>
         </div>
         <p class="footer-text">We don't post anything to Facebook and Linkedin, By signing in, you agree with our <a href="">Term and Conditions</a> and <a href="">Privacy Policy</a></p>
       </div>
-      // <div className={classes.main}>
-      //      <Paper className={classes.paper}>
-      //     <form
-      //       className={classes.form}
-      //       onSubmit={() => this.login}
-      //     >
-      //       <FormControl required fullWidth margin="normal">
-      //         <InputLabel htmlFor="email" className={classes.labels}>
-      //           Email
-      //         </InputLabel>
-      //         <Input
-      //           name="email"
-      //           type="email"
-      //           autoComplete="email"
-      //           className={classes.inputs}
-      //           disableUnderline={true}
-      //           onChange={this.handleChange("email")}
-      //         />
-      //       </FormControl>
-
-      //       <FormControl required fullWidth margin="normal">
-      //         <InputLabel htmlFor="password" className={classes.labels}>
-      //           Password
-      //         </InputLabel>
-      //         <Input
-      //           name="password"
-      //           autoComplete="password"
-      //           className={classes.inputs}
-      //           disableUnderline={true}
-      //           onClick={this.state.showPassword}
-      //           onChange={this.handleChange("password")}
-      //           type={this.state.hidePassword ? "password" : "input"}
-
-      //           endAdornment={
-      //             this.state.hidePassword ? (
-      //               <InputAdornment position="end">
-      //                 <VisibilityOffTwoToneIcon
-      //                   fontSize="default"
-      //                   className={classes.passwordEye}
-      //                   onClick={this.showPassword}
-      //                 />
-      //               </InputAdornment>
-      //             ) : (
-      //                 <InputAdornment position="end">
-      //                   <VisibilityTwoToneIcon
-      //                     fontSize="default"
-      //                     className={classes.passwordEye}
-      //                     onClick={this.showPassword}
-      //                   />
-      //                 </InputAdornment>
-      //               )
-      //           }
-      //         />
-      //       </FormControl>
-      //       <Button
-      //         disabled={!this.isValid()}
-      //         disableRipple
-      //         fullWidth
-      //         variant="outlined"
-      //         className={classes.button}
-      //         type="submit"
-      //         onClick={this.login}
-      //       >
-      //         Login
-      //       </Button>
-      //     </form>
-
-      //     <Button
-      //       disableRipple
-      //       fullWidth
-      //       variant="outlined"
-      //       className={classes.socialbutton}
-      //       type="submit"
-      //       onClick={this.loginWithGoogle}
-      //     >
-      //       Login with Google
-      //       </Button>
-      //     <Button
-      //       disableRipple
-      //       fullWidth
-      //       variant="outlined"
-      //       className={classes.socialbutton}
-      //       type="submit"
-      //       onClick={this.loginWithFacebook}
-      //     >
-      //       Login with Facebook
-      //       </Button>
-      //     <Button
-      //       disableRipple
-      //       fullWidth
-      //       variant="outlined"
-      //       className={classes.socialbutton}
-      //       type="submit"
-      //       onClick={this.loginWithTwitter}
-      //     >
-      //       Login with Twitter
-      //       </Button>
-
-      //     <p className="text-center my-3">
-      //       Don't have an account?{" "}
-      //       <Link to="/signup" className="text-blue-500 hover:text-blue-600">
-      //         Sign up here
-      //     </Link>{" "}
-      //       <br />{" "}
-      //       <Link to="/reset" className="text-blue-500 hover:text-blue-600">
-      //         Forgot Password?
-      //     </Link>
-      //     </p>
-      //     {this.state.error ? (
-      //       <Snackbar
-      //         variant="error"
-      //         key={this.state.error}
-      //         anchorOrigin={{
-      //           vertical: "bottom",
-      //           horizontal: "center"
-      //         }}
-      //         open={this.state.errorOpen}
-      //         onClose={this.errorClose}
-      //         autoHideDuration={3000}
-      //       >
-      //         <SnackbarContent
-      //           className={classes.error}
-      //           message={
-      //             <div>
-      //               <span style={{ marginRight: "8px" }}>
-      //                 <ErrorIcon fontSize="large" color="error" />
-      //               </span>
-      //               <span> {this.state.error} </span>
-      //             </div>
-      //           }
-      //           action={[
-      //             <IconButton
-      //               key="close"
-      //               aria-label="close"
-      //               onClick={this.errorClose}
-      //             >
-      //               <CloseIcon color="error" />
-      //             </IconButton>
-      //           ]}
-      //         />
-      //       </Snackbar>
-      //     ) : null}
-      //   </Paper> 
-      // </div >
     );
   }
 }
