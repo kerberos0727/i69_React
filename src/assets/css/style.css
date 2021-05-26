@@ -116,7 +116,7 @@ i{
 }
 
 .tab-pane{
-    /* background-image: url(../images/login/texture-01.png); */
+    background-image: url(../images/login/texture-01.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
