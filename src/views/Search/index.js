@@ -32,25 +32,25 @@ const Home = () => {
                                 <div class="search-card-img">
                                     <img src={require('../../assets/images/login/logo.png')} alt="" />
                                 </div>
-                                <h3 class="text-center">BUY CHAT COIN</h3>
-                                <strong>But i69 coins - open new world of connection</strong>
+                                <h3 class="text-center" style={{ color: '#333' }}>BUY CHAT COIN</h3>
+                                <strong style={{ color: '#333' }}>But i69 coins - open new world of connection</strong>
                             </div>
                         </div>
                         <div class="search-items  col-lg-3 col-md-4 col-sm-6 col-6">
                             <img src={require('../../assets/images/login/demo-user.jpg')} alt="" />
-                            <span>Ammanda , 28</span>
+                            <span style={{ color: '#333' }}>Ammanda , 28</span>
                         </div>
                         <div class="search-items  col-lg-3 col-md-4 col-sm-6 col-6">
                             <img src={require('../../assets/images/login/demo-user.jpg')} alt="" />
-                            <span>Ammanda , 28</span>
+                            <span style={{ color: '#333' }}>Ammanda , 28</span>
                         </div>
                         <div class="search-items col-lg-3 col-md-4 col-sm-6 col-6">
                             <img src={require('../../assets/images/login/demo-user.jpg')} alt="" />
-                            <span>Ammanda , 28</span>
+                            <span style={{ color: '#333' }}>Ammanda , 28</span>
                         </div>
                         <div class="search-items  col-lg-3 col-md-4 col-sm-6 col-6">
                             <img src={require('../../assets/images/login/demo-user.jpg')} alt="" />
-                            <span>Ammanda , 28</span>
+                            <span style={{ color: '#333' }}>Ammanda , 28</span>
                         </div>
                     </div>
 
