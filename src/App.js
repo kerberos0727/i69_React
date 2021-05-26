@@ -8,7 +8,9 @@ import ReactGA from 'react-ga';
 import LayoutDefault from './layouts/LayoutDefault';
 
 // Views 
-import Home from './views/Home';
+import Search from './views/Search';
+import Message from './views/Message';
+import Userinfo from './views/userInfo';
 import FAQ from './views/FAQ'
 import Policy from './views/Policy'
 import Terms from './views/Terms'
@@ -44,8 +46,9 @@ const App = () => {
       ref={childRef}
       children={() => (
         <Switch>
-
-          <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+          <AppRoute exact path="/" component={Search} layout={LayoutDefault} />
+          <AppRoute exact path="/message" component={Message} layout={LayoutDefault} />
+          <AppRoute exact path="/userinfo" component={Userinfo} layout={LayoutDefault} />
           <AppRoute exact path="/faq" component={FAQ} layout={LayoutDefault} />
           <AppRoute exact path="/policy" component={Policy} layout={LayoutDefault} />
           <AppRoute exact path="/terms" component={Terms} layout={LayoutDefault} />
